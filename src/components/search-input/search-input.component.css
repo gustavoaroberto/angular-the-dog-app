@@ -1,0 +1,23 @@
+.searchInput {
+    width: 100%;
+}
+
+.searchInput fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.searchInput label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.searchInput input {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    border: none;
+}

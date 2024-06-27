@@ -1,4 +1,64 @@
-.brand-name {
-    width: 100%;
-    background-color: red;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    gap: 20px;
+    color: black;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.main>img {
+    width: 200px;
+    height: 200px;
+}
+
+.main i {
+    font-style: italic;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.searchButton {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #52D7AF;
+    color: black;
+    border: none;
+    font-weight: 600;
+}
+
+.main section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card b {
+    font-weight: 600;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

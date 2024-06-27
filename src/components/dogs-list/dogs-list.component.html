@@ -1,0 +1,11 @@
+<section class="dogsList">
+    <div class="card" *ngFor="let breed of breedsList">
+        <img [ngSrc]="breed.image ? '/images/'+ breed.image.id +'.jpg' : 'https://httpstatusdogs.com/img/404.jpg'"
+            [alt]="breed.name" fill />
+        <div>
+            <h2>{{breed.name}}</h2>
+            <p><b>Life Span:</b> {{breed.life_span}}</p>
+            <p><b>Temperament:</b> {{breed.temperament}}</p>
+        </div>
+    </div>
+</section>

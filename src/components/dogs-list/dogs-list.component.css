@@ -1,0 +1,37 @@
+.dogsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    gap: 20px;
+    background-color: white;
+    padding: 12px;
+    padding-left: 170px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: auto;
+    height: auto;
+    max-width: 150px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card b {
+    font-weight: 600;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
