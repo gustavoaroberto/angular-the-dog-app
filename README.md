@@ -1,27 +1,72 @@
-# AngularTheDogApp
+# The Dog App - Angular Version
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+The Dog App is an Angular 18 application that fetches data from a free API to display various dog breeds. This app is part of a larger initiative to compare development experiences across different front-end frameworks. The goal is to explore how each framework handles API integration, data fetching, and creating modern, responsive web applications. This project is an integral part of my journey to learn and understand various front-end technologies' strengths and learning curves.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [License](#license)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Fetch and display a list of dog breeds
+- Detailed view of each breed with additional information
+- Responsive design for mobile and desktop views
+- Modern UI/UX with a focus on simplicity and usability
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
 
-## Running unit tests
+    ```bash
+    git clone https://github.com/gustavoaroberto/angular-the-dog-app.git
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navigate to the project directory:
 
-## Running end-to-end tests
+    ```bash
+    cd angular-the-dog-app
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Install dependencies with npm:
 
-## Further help
+    ```bash
+    npm install
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4. Create an `environment.ts` file in the `src/environments` directory and add your API key:
+
+    ```typescript
+    export const environment = {
+      production: false,
+      apiUrl: 'https://api.thedogapi.com/v1',
+      apiKey: 'your_api_key_here'
+    };
+    ```
+
+5. Start the development server:
+
+    ```bash
+    ng serve
+    ```
+
+6. Open your browser and go to `http://localhost:4200`.
+
+## Usage
+
+- On the home page, you will see a list of dog breeds.
+- Click on any breed to see more details.
+- Use the search functionality to quickly find specific breeds.
+
+## Technologies
+
+- **Angular 18**: Framework for building client-side applications.
+- **RxJS**: Library for reactive programming using observables.
+- **Angular CLI**: Command-line interface for Angular.
+
+## License
+
+This project is licensed under the MIT License.
